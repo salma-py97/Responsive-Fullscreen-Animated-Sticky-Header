@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Fullscreen Animated Sticky Header</title>
+</head>
+<body>
+    <header>
+        <img src="bg1.jpeg" class="banner" alt="">
+        <a href="#" class="logo">Brand.</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>
+            Creative Fullscreen Sticky header
+        </h2>
+        <p style="height: 1000px;">
+        </p>
+    </section>
+    <script>
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0.1);
+        })
+    </script>
+    
+</body>
+</html>
